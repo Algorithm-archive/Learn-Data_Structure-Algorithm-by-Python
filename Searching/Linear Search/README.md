@@ -7,11 +7,11 @@
 
 #### Python Implementation
 
-Though it is very easy in python to check for an item's existence in a list by:
+Though it is very easy in python to check for [an item's existence in a list](http://stackoverflow.com/a/7571665/4230330) by:
 
 `item in list`
 
-and finding an item's index by:
+and [finding an item's index](http://stackoverflow.com/a/176921/4230330) by:
 
 `list.index(item)`
 
