@@ -21,7 +21,6 @@ but sometimes you might need to do some customization on the searching algorithm
 - Worst Case - O(n)
 - Best Case - O(1)
 - Average Case - O(n)
-- Space Complexity - O(n)
 
 
 ### More on this topic
