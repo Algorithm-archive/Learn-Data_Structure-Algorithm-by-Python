@@ -7,9 +7,10 @@ def simpleTernarySearch(item_list):
     left, right = 0, len(item_list) - 1
 
     found = False
+    precision = 3
 
     while left <= right:
-        if (right - left) < 3: #Here 3 is the smallest range to divide the left and right value
+        if (right - left) < precision: #Here 3 is the smallest range to divide the left and right value
             found = True
             break
 
