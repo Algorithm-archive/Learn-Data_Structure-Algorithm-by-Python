@@ -24,14 +24,14 @@ class MaxHeap(object):
 	def _bubbleUp(self, currentPosition):
 		if currentPosition >= 1: # no need to do bubbleUp for 1 element
 			index = currentPosition
-			parrentIndex = index//2
+			parentIndex = (index-1)//2
 
-			if parrentIndex >= 0 and self.heap[parrentIndex] < self.heap[index]:
-				self._swap(parrentIndex, index)
-				self._bubbleUp(parrentIndex)
+			if parentIndex >= 0 and self.heap[parentIndex] < self.heap[index]:
+				self._swap(parentIndex, index)
+				self._bubbleUp(parentIndex)
 			
 	def peek(self):
-		return self.heap[0] if self.heap else False
+		return self.heap[0] if self.heap else None
 
 	def pop(self):
 		element = self.peek()
@@ -42,7 +42,7 @@ class MaxHeap(object):
 		return element
 
 	def _bubbleDown(self, index):
-		leftChildIndex = 2 * index + 1
+		leftChildIndex = 2 * index + 1 
 		rightChildIndex = 2 * index + 2
 		largest = index
 		if len(self.heap) > leftChildIndex and self.heap[largest] < self.heap[leftChildIndex]:

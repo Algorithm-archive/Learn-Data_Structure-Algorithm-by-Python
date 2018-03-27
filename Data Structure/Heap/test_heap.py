@@ -21,7 +21,7 @@ class MaxHeapTestCase(unittest.TestCase):
         ob.pop()
         ob.pop()
         ob.pop()
-        self.assertEqual(ob.peek(), False, msg="Max Element is not matched")
+        self.assertEqual(ob.peek(), None, msg="Max Element is not matched")
 
 if __name__ == '__main__':
     unittest.main()
