@@ -12,13 +12,18 @@ class MaxHeapTestCase(unittest.TestCase):
         ob.insert(3)
         ob.insert(8)
         ob.insert(20)
-
+        self.assertEqual(ob.peek(), 20, msg="Max Element is not matched")
         ob.pop()
         ob.pop()
-        
-        get_max = ob.getMax()
-        self.assertEqual(ob.printHeap(), [8, 6, 3, 5], msg="Heap Element Should be [8,6,3,5]")
-        self.assertEqual(get_max, 8, msg="Max Element is not matched")
+        self.assertEqual(ob.peek(), 8, msg="Max Element is not matched")
+        ob.pop()
+        self.assertEqual(ob.peek(), 6, msg="Max Element is not matched")
+        ob.pop()
+        ob.pop()
+        ob.pop()
+        self.assertEqual(ob.peek(), False, msg="Max Element is not matched")
 
 if __name__ == '__main__':
     unittest.main()
+
+
