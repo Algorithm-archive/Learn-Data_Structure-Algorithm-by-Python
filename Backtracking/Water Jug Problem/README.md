@@ -54,8 +54,7 @@ That's it! All the steps to the goal state (if found) will be listed.
 
 ## Output
 
-<img width = 300 height = 600 src="../Water Jug Problem/Images/ss1.png">
+<img width = 300 height = 600 src="https://github.com/prathimacode-hub/Learn-Data_Structure-Algorithm-by-Python/blob/master/Backtracking/Water%20Jug%20Problem/Images/ss1.png">
 <img width = 300 height = 600 src="../Water Jug Problem/Images/ss2.png">
-<img width = 300 height = 600 src="../Water Jug Problem/Images/ss3.png">
-<img width = 300 height = 200 src="../Water Jug Problem/Images/ss4.png">
+
 
